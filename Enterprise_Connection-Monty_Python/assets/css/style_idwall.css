@@ -1,0 +1,64 @@
+
+
+body {
+    background-color: #f3f2ff;
+    font-family: Inter (12px);
+    position: relative;
+    background: #F3F2FF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+.userLogged {
+    text-align: end;
+}
+
+.painelUsers {
+    position: absolute;
+    width: 2027px;
+    height: 1134px;
+    left: 431px;
+    top: 215px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.sideMenu {
+    position: absolute;
+    width: 278px;
+    height: 1134px;
+    left: 66px;
+    top: 215px;
+
+    background: #A491FF;
+    border-radius: 30px;
+}
+
+.logoMain {
+    position: absolute;
+    width: 500px;
+    height: 160px;
+    left: -38px;
+    top: 32px;
+
+    background: url(logo.png);
+}
