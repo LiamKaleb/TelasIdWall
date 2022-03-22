@@ -1,0 +1,77 @@
+h1 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: Inter;
+}
+h3 {
+    margin-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+header{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+body {
+    background-color: lavender;
+}
+
+#caixaOpcoes{
+    border-bottom: outset;
+    border-color: blueviolet;
+
+}
+#tituloOpcoes {
+    font-weight: bold;
+    font-size:x-large;
+    margin-top: 50px;
+    font-style: Inter;
+
+}
+
+.novacor {
+    opacity: 0.1;
+}
+
+#formulario {
+    border-radius:30px;
+    border-color: antiquewhite;
+    margin-left: 35px;
+    margin-top: 20px;
+    
+}
+
+#nascimentoFormulario {
+    padding-left: 30px;
+}
+
+#cpfFormulario {
+    padding-left: 30px;
+
+}
+
+#botao {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: blueviolet;
+}
+
+#relatorio {
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 0;
+    border-top: outset;
+    border-color: blueviolet;
+    border-radius: 10px;
+
+}
+
+row  {
+    padding-left: 23px;
+    font-style: Inter;
+    font-size: 12px;
+    list-style-type: none;
+}

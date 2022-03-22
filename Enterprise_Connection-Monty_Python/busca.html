@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Wall - Pesquisa de Usuário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style_idwall_busca.css">
+    <link rel="stylesheet" href="./assets/css/colors_idwall.css">
+</head>
+
+<body>
+    <!-- COMEÇO CABEÇALHO DA PÁGINA -->
+    <header>
+        <div class="header-container">
+            <div>
+                <a href="#">
+                    <img class="logo-main" src="./assets/images/logo.png" alt="Logo Id Wall">
+                </a>
+            </div>
+            <div>
+                <div>
+                    <input type="text" name="search-bar" placeholder="Pesquisar nome" class="search-bar">
+                    <button class="btn btn-primary">Procurar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FINAL CABEÇALHO DA PÁGINA -->
+
+    <!-- COMEÇO PRINCIPAL -->
+    <main class="d-flex flex-row">
+        <aside class="aside-container px-4">
+            <ul class="aside-nav p-0">
+                <li class="px-4"><a href="#">Protocolos</a></li>
+                <li class="px-4"><a href="#">Documentos</a></li>
+                <li class="px-4"><a href="#">Usuários</a></li>
+                <li class="px-4"><a href="#">Fontes</a></li>
+                <li class="px-4"><a href="#">Matrizes</a></li>
+                <li class="px-4"><a href="#">Regras</a></li>
+                <li class="px-4"><a href="#">Atributos</a></li>
+                <li class="px-4"><a href="#">Monitor</a></li>
+                <li class="px-4"><a href="#">Organizações</a></li>
+                <li><a href="#"></a><select class="drop-down" name="opcoes" id="opcoes">
+                        <option disabled selected hidden>Status</option>
+                        <option value="1">AntecedentesCE</option>
+                        <option value="2">AntecedentesDF</option>
+                        <option value="3">AntecedentesMT</option>
+                        <option value="4">AntecedentesRO</option>
+                        <option value="5">AntecedentesTO</option>
+                        <option value="6">CADICON</option>
+                        <option value="7">InfraçõesDetranCE</option>
+                        <option value="8">InfraçõesDetranPI</option>
+                        <option value="9">InfraçõesDetranSE</option>
+                        <option value="10">InfraçõesPrefeituraSP</option>
+                        <option value="11">InfraçõesRS</option>
+                        <option value="12">JuntaComercialDF</option>
+                        <option value="13">MultasPoliciaRodoviariaFederal</option>
+                        <option value="14">NovoAntecedentesMT</option>
+                        <option value="15">RestituicaoReceitaFederal</option>
+                        <option value="16">SIAFI</option>
+                        <option value="17">SSDMEC</option>
+                        <option value="18">VeiculoDetranSP</option>
+                    </select></li>
+                <li class="px-4"><a href="#">Sair</a></li>
+        </aside>
+        <section class="search-container scroll">
+            <table class="table table-striped">
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Protocolos</th>
+                        <th>Email</th>
+                        <th>Acesso</th>
+                        <th>Backoffice</th>
+                        <th>IDnetwork</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <!-- Fim do Cabeçalho da tabela -->
+
+                <!-- Corpo da tabela -->
+                <tbody>
+                    
+                    <!-- Primeira linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Primeira linha -->
+                    
+                    <!-- Segunda linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Segunda linha -->
+                    
+                    <!-- Terceira linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Terceira linha -->
+                    
+                    <!-- Quarta linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Quarta linha -->
+                    
+                    <!-- Quinta linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Quinta linha -->
+                    
+                    <!-- Sexta linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Sexta linha -->
+                    
+                    <!-- Sétima linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Sétima linha -->
+                    
+                    <!-- Oitava linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Oitava linha -->
+
+                    <!-- Nona linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Nona linha -->
+
+                    <!-- Décima linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima linha -->
+
+                    <!-- Décima primeira linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima primeira linha -->
+
+                    <!-- Décima segunda linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima segunda linha -->
+
+                    <!-- Décima terceira linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso sem-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima terceira linha -->
+
+                    <!-- Décima quarta linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima quarta linha -->
+
+                    <!-- Décima quinta linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima quinta linha -->
+
+                    <!-- Décima sexta linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima sexta linha -->
+
+                    <!-- Décima sétima linha -->
+                    <tr>
+                        <td class="table-text">1</td>
+                        <td class="table-text">1234</td>
+                        <td class="table-text"></td>
+                        <td class="table-text">email@email.com.br</td>
+                        <td><div class="acesso com-acesso"></div></td>
+                        <td class="table-text">Sim</td>
+                        <td></td>
+                        <td>
+                            <select class="drop-down" name="opcoes" id="opcoes">
+                                <option disabled selected hidden>Opções</option>
+                                <option value="1">Entrar</option>
+                                <option value="2">Editar</option>
+                                <option value="3">Excluir</option>
+                            </select>
+                        </td>
+                    </tr>                    
+                    <!-- Fim Décima sétima linha -->
+                    
+                </tbody>
+                <!-- Fim Corpo da tabela -->
+
+            </table>          
+        </section>
+    </main>
+    <!-- FINAL PRINCIPAL -->
+
+    <!-- COMEÇO RODAPÉ -->
+    <footer>
+        
+    </footer>
+    <!-- FINAL RODAPÉ -->
+    
+</body>
+
+</html>
